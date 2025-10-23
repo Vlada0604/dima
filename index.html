@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Apple Store - Головна</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="active">Головна</a>
+            <a href="iphone.html">iPhone</a>
+            <a href="ipad.html">iPad</a>
+            <button id="view-cart-button">🛒 Кошик (<span id="cart-count-nav">0</span>)</button>
+        </nav>
+        <h1>Ласкаво просимо до Apple Store</h1>
+    </header>
+
+    <main class="main-page-content">
+        <h2>Магазин преміальних пристроїв Apple в Україні</h2>
+        <p>Ми пропонуємо найширший асортимент оригінальних iPhone та iPad. Завдяки прямим поставкам, ми гарантуємо найкращі ціни та високу якість обслуговування.</p>
+        
+        <div class="category-links">
+            <a href="iphone.html" class="category-card">
+                <h3>Смартфони iPhone</h3>
+                <p>Відкрийте для себе останні моделі, включаючи серії Pro та Pro Max.</p>
+                <img src="https://mamul.am/images/photos/230913/apple-y-nerkayacrel-e-nor-ipho-n275060-1.jpg" alt="iPhone" width="200px" height="200px"/>
+            </a>
+            <a href="ipad.html" class="category-card">
+                <h3>Планшети iPad</h3>
+                <p>Потужність та портативність для роботи та творчості.</p>
+                <img src="https://img.ktc.ua/img/base/1/8/391558.jpg" alt="iPad" width="200px" height="200px"/>
+            </a>
+        </div>
+
+        <section class="hot-deals">
+            <h2>🔥 Найходовіші товари</h2>
+            <div class="product-list" id="productList">
+                
+                <div class="product iphone" data-product-id="ip15pm" data-price="45000" data-name="iPhone 15 Pro Max">
+                    <h3>iPhone 15 Pro Max</h3>
+                    <p>Найпопулярніший вибір!</p>
+                    <img src="https://img.jabko.ua/image/cache/catalog/products/2024/01/221729/fkvmnb-1397x1397.jpg.webp" width="130px" height="140px" alt="iPhone 15 Pro Max"/>
+                    <p class="price">Ціна: 45000 грн</p>
+                    <button class="add-to-cart" data-id="ip15pm">Додати в кошик</button>
+                </div>
+
+                <div class="product ipad" data-product-id="ipp12" data-price="35000" data-name="iPad Pro 12.9">
+                    <h3>iPad Pro 12.9 (M2)</h3>
+                    <p>Для професіоналів та творчості.</p>
+                    <img src="https://img.jabko.ua/image/cache/catalog/products/2022/10/181929/ipad-pro-11-select-wifi-spacegra%20(1)-1397x1397.jpg.webp" width="170px" alt="iPad Pro 12.9"/>
+                    <p class="price">Ціна: 35000 грн</p>
+                    <button class="add-to-cart" data-id="ipp12">Додати в кошик</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>🛒 Ваш Кошик</h2>
+            <div id="cart-items"></div>
+            <p>Загальна сума: <span id="cart-total">0</span> грн</p>
+            <button id="checkout-button">Оформити замовлення</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+          
