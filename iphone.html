@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Apple Store - iPhone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="iphone.html" class="active">iPhone</a>
+            <a href="ipad.html">iPad</a>
+            <button id="view-cart-button">🛒 Кошик (<span id="cart-count-nav">0</span>)</button>
+        </nav>
+        <h1>Усі моделі iPhone</h1>
+    </header>
+
+    <main>
+        <div class="product-list" id="productList">
+            <div class="product iphone" data-product-id="ip11" data-price="12000" data-name="iPhone 11">
+                <h3>iPhone 11</h3>
+                <img src="https://m1.repka.ua/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/6/7/67651596546294.jpg" width="120px" alt="iPhone 11"/>
+                <p>Колір: Чорний/Жовтий</p>
+                <p class="price">Ціна: 12000 грн</p>
+                <button class="add-to-cart" data-id="ip11">Додати в кошик</button>
+            </div>
+            <div class="product iphone" data-product-id="ip12" data-price="16500" data-name="iPhone 12">
+                <h3>iPhone 12</h3>
+                <img src="https://mobigo.com.ua/image/cache/catalog/used/ip12pro/12-pro-graphite-1-720x720.jpg" width="150px" height="170px" alt="iPhone 12"/>
+                <p>Колір: Чорний/Жовтий</p>
+                <p class="price">Ціна: 16500 грн</p>
+                <button class="add-to-cart" data-id="ip12">Додати в кошик</button>
+            </div>
+            <div class="product iphone" data-product-id="ip13" data-price="20000" data-name="iPhone 13">
+                <h3>iPhone 13</h3>
+                <img src="https://img.jabko.ua/image/cache/catalog/products/2022/04/221558/IMG_9284%20(1)-1397x1397.jpg.webp" width="170px" height="150px" alt="iPhone 13"/>
+                <p>Колір: Чорний/Жовтий</p>
+                <p class="price">Ціна: 20000 грн</p>
+                <button class="add-to-cart" data-id="ip13">Додати в кошик</button>
+            </div>
+            <div class="product iphone" data-product-id="ip14" data-price="25000" data-name="iPhone 14">
+                <h3>iPhone 14</h3>
+                <img src="https://apple-people.com.ua/content/images/39/373x536l50bc50/apple-iphone-14-pro-max-128gb-space-black-mq9p3-original-15505083972659.png" width="160px" height="170px" alt="iPhone 14"/>
+                <p>Колір: Чорний/Жовтий</p>
+                <p class="price">Ціна: 25000 грн</p>
+                <button class="add-to-cart" data-id="ip14">Додати в кошик</button>
+            </div>
+            <div class="product iphone" data-product-id="ip15pm" data-price="45000" data-name="iPhone 15 Pro Max">
+                <h3>iPhone 15 Pro Max</h3>
+                <p>512 GB</p>
+                <img src="https://img.jabko.ua/image/cache/catalog/products/2024/01/221748/awhite-1397x1397.jpg.webp" width="130px" height="140px" alt="iPhone 15 Pro Max"/>
+                <p class="price">Ціна: 45000 грн</p>
+                <button class="add-to-cart" data-id="ip15pm">Додати в кошик</button>
+            </div>
+            <div class="product iphone" data-product-id="ip16p" data-price="40000" data-name="iPhone 16 Pro">
+                <h3>iPhone 16 Pro</h3>
+                <p>256 GB</p>
+                <img src="https://scdn.comfy.ua/89fc351a-22e7-41ee-8321-f8a9356ca351/https://cdn.comfy.ua/media/catalog/product/i/p/iphone-16-pro-finish-select-202409-6-9inch-blacktitanium.jpg/w_600" width="150px" height="150px" alt="iPhone 16 Pro"/>
+                <p class="price">Ціна: 40000 грн</p>
+                <button class="add-to-cart" data-id="ip16p">Додати в кошик</button>
+            </div>
+            <div class="product iphone" data-product-id="ip17pm" data-price="55000" data-name="iPhone 17 Pro Max">
+                <h3>iPhone 17 Pro Max</h3>
+                <p>512 GB</p>
+                <img src="https://cdn.comfy.ua/media/catalog/product/cache/5/image/600x/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_17_pro_max_deep_blue_pdp_image_position_1__ce-ww_1_.jpg" width="130px" height="150px" alt="iPhone 17 Pro Max"/>
+                <p class="price">Ціна: 55000 грн</p>
+                <button class="add-to-cart" data-id="ip17pm">Додати в кошик</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>🛒 Ваш Кошик</h2>
+            <div id="cart-items"></div>
+            <p>Загальна сума: <span id="cart-total">0</span> грн</p>
+            <button id="checkout-button">Оформити замовлення</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
