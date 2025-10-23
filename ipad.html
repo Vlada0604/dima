@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Apple Store - iPad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="iphone.html">iPhone</a>
+            <a href="ipad.html" class="active">iPad</a>
+            <button id="view-cart-button">🛒 Кошик (<span id="cart-count-nav">0</span>)</button>
+        </nav>
+        <h1>Усі моделі iPad</h1>
+    </header>
+
+    <main>
+        <div class="product-list" id="productList">
+            <div class="product ipad" data-product-id="ipa10" data-price="18000" data-name="iPad Air 10.9">
+                <h3>iPad Air 10.9 (5th gen)</h3>
+                <img src="https://apple-mania.com.ua/media/catalog/product/cache/e026f651b05122a6916299262b60c47d/1/7/177a840b417726595e733ca04c97dcf4_1.webp" width="170px" alt="iPad Air 10.9"/>
+                <p>Об'єм: 64 GB</p>
+                <p class="price">Ціна: 18000 грн</p>
+                <button class="add-to-cart" data-id="ipa10">Додати в кошик</button>
+            </div>
+            <div class="product ipad" data-product-id="ipp12" data-price="35000" data-name="iPad Pro 12.9">
+                <h3>iPad Pro 12.9 (M2)</h3>
+                <img src="https://img.jabko.ua/image/cache/catalog/products/2022/10/181926/ipad-pro-11-select-wifi-spacegra-1397x1397.jpg.webp" width="170px" alt="iPad Pro 12.9"/>
+                <p>Об'єм: 128 GB</p>
+                <p class="price">Ціна: 35000 грн</p>
+                <button class="add-to-cart" data-id="ipp12">Додати в кошик</button>
+            </div>
+            <div class="product ipad" data-product-id="ipm6" data-price="15000" data-name="iPad Mini 6">
+                <h3>iPad Mini (6th gen)</h3>
+                <img src="https://img.jabko.ua/image/cache/catalog/products/2021/09/150131/2021-09-15%2001.26.33-1397x1397.jpg.webp" width="170px" alt="iPad Mini 6"/>
+                <p>Об'єм: 64 GB</p>
+                <p class="price">Ціна: 15000 грн</p>
+                <button class="add-to-cart" data-id="ipm6">Додати в кошик</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>🛒 Ваш Кошик</h2>
+            <div id="cart-items"></div>
+            <p>Загальна сума: <span id="cart-total">0</span> грн</p>
+            <button id="checkout-button">Оформити замовлення</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
